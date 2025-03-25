@@ -1,1 +1,1 @@
-export const logo = '/photo_2025-03-19_21-14-11.jpg'
+export const logo = '/public/photo_2025-03-19_21-14-11.jpg'
