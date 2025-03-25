@@ -1,0 +1,1 @@
+export const logo = '/photo_2025-03-19_21-14-11.jpg'
