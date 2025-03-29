@@ -1,1 +1,0 @@
-export const logo = '/public/photo_2025-03-19_21-14-11.jpg'
