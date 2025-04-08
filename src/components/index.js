@@ -5,5 +5,9 @@ export {default as VideoDetail} from './video-detial/videoDetail.jsx'
 export {default as Chanel} from './chanel/chanel.jsx'
 export {default as Navbar} from './navbar/navbar.jsx'
 export {default as searchBox} from './search-box/searchBox'
+export {default as Videos} from './videos/videos.jsx'
+export {default as Videocard} from './videocard/videocard.jsx'
+export {default as Channelcard} from './channelcard/channelcard.jsx'
+
 
 

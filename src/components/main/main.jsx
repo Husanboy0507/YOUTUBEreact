@@ -3,21 +3,34 @@ import { useEffect, useState } from "react"
 import {colors} from "../../../constants/colors"
 import Category from "../category/category"
 import { ApiService } from "../../service/api.service"
+import  Videos  from "../videos/videos"
+
 
 
 const Main = () => {
   const [selectCategory, setSelectCategory] = useState('New')
+  const [videos, setVideos] = useState([])
   const selectCategoryHandler = category => setSelectCategory(category)
-  
-  const hh = import.meta.env.VITE_PUBLIC_URL
-  console.log(hh)
   
 
 
 useEffect(() =>{
-ApiService.fetching('search').then(data => console.log(data)
-)
-}, [])
+  const getData = async () =>{
+    try{
+          const data = await ApiService.fetching(`search?part=snippet&q=${selectCategory}`)
+          setVideos(data.items)
+          console.log(data.items);
+          
+
+    }
+    catch(error){
+      console.log(error);
+      
+    }
+  }
+  getData()
+
+}, [selectCategory])
 
   return (
     <Stack>
@@ -27,7 +40,8 @@ ApiService.fetching('search').then(data => console.log(data)
           <Typography variant={'h4'} fontWeight={'bold'}>
 {selectCategory} <span style={{color:colors.secondary}}>Videos</span>
           </Typography>
-          videos
+          <Videos videos={videos}/>
+          {videos?.item?.map(item => item.kind)}
         </Container>
       </Box>
     </Stack>
