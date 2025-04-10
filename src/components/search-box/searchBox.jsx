@@ -13,6 +13,7 @@ const SearchBox = () => {
      e.preventDefault()
      if(value){
         navigate(`/search/${value}`)
+        setValue('')
      }
   
   }

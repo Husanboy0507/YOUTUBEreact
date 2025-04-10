@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { ApiService } from "../../service/api.service"
 import { Box, Container, Typography } from "@mui/material"
 import { colors } from "../../../constants/colors"
+import { Videos } from ".."
 
 const Search = () => {
   const [videos, setVideos] = useState([])
@@ -32,6 +33,8 @@ const Search = () => {
         Search result for <span style={{color:colors.secondary}}>{id}</span> videos
 
       </Typography>
+
+      <Videos videos={videos}/>
       </Container>
 
     </Box>

@@ -2,7 +2,7 @@ import { CheckCircle } from "@mui/icons-material"
 import { Box, CardContent, CardMedia, Typography } from "@mui/material"
 
 
-const Channelcard = (video) => {
+const Channelcard = ({video}) => {
   return (
    <Box
    sx={{
@@ -27,7 +27,7 @@ const Channelcard = (video) => {
     }}
     >
     <CardMedia 
-    image={video?.snippet?.thumbnails?.default?.url} 
+    image={video?.snippet?.thumbnails?.high?.url} 
     alt={video?.snippet?.title}
     sx={{
         borderRadius: '50%',

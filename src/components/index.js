@@ -8,6 +8,7 @@ export {default as searchBox} from './search-box/searchBox'
 export {default as Videos} from './videos/videos.jsx'
 export {default as Videocard} from './videocard/videocard.jsx'
 export {default as Channelcard} from './channelcard/channelcard.jsx'
+export {default as Loader} from './loader/loader.jsx'
 
 
 
