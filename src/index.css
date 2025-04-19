@@ -4,6 +4,10 @@
     box-sizing: border-box;
     
   }
+  a{
+    color: black;
+    text-decoration: none;
+  }
   .inputSearch{
       border: 0;
       outline: 0;
@@ -47,8 +51,18 @@
     background-color: transparent;
   }
 
+  .react-player{
+    width: 100% !important;
+    height: 77vh !important;
+  }
+
  @media screen and (max-width:600px){
   .inputSearch{
     width: 200px;
+  }
+  
+  .react-player{
+  
+    height: 45vh !important;
   }
 }

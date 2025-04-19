@@ -19,7 +19,7 @@ useEffect(() =>{
     try{
           const data = await ApiService.fetching(`search?part=snippet&q=${selectCategory}`)
           setVideos(data.items)
-          console.log(data.items);
+          // console.log(data.items);
           
 
     }
